@@ -89,7 +89,11 @@
         function updateZoneText() {
             const zoneElement = document.querySelector('.rectangle-text1');
             let currentZone = parseInt(zoneElement.textContent, 10);
-            currentZone = currentZone === 4 ? 3 : currentZone + 1;
+            if (currentZone === 4) {
+                currentZone = 2;  // Reset to 2 when it's 4
+            } else {
+                currentZone += 1; // Increment otherwise
+            }
             zoneElement.textContent = currentZone;
         }
         updateMonthAndYear();
