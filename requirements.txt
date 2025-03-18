@@ -1,0 +1,9 @@
+﻿Flask
+qrcode
+pytz
+numpy
+flask_cors
+requests
+Pillow
+opencv-python-headless
+zxing-cpp
